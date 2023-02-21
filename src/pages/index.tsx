@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -9,7 +10,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main></main>
+      <main className="bg-white px-10">
+        <section className="min-h-screen">
+          <nav className="mb-12 flex justify-between py-10">
+            <h1 className="font-burtons text-xl">shayan ameen</h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+              </li>
+              <li>
+                <a
+                  className=" ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
+                  href="#"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </main>
     </>
   );
 }
