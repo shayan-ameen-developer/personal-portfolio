@@ -1,5 +1,14 @@
 import Head from "next/head";
+import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+
+import threeDimensionalImage from "../../public/dev-ed-wave.png";
 
 export default function Home() {
   return (
@@ -10,17 +19,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 lg:px-20">
         <section className="min-h-screen">
           <nav className="mb-12 flex justify-between py-10">
-            <h1 className="font-burtons text-xl">shayan ameen</h1>
+            <h1 className="font-burtons text-2xl lg:text-3xl">shayan ameen</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl lg:text-3xl" />
               </li>
               <li>
                 <a
-                  className=" ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
+                  className="ml-8 rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white lg:text-2xl"
                   href="#"
                 >
                   Resume
@@ -28,6 +37,48 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="p-10 text-center">
+            <h2 className="py-2 text-4xl font-medium text-teal-600 md:text-5xl lg:text-7xl">
+              Shayan Ameen
+            </h2>
+            <h3 className="py-2 text-xl md:text-2xl lg:text-3xl">
+              JavaScript Developer
+            </h3>
+            <p className="py-2 text-base leading-8 text-gray-700 md:py-4 lg:px-28 lg:text-2xl">
+              Freelancer providing services for Web Development and needs. Join
+              me down below and let&apos;s get cracking.
+            </p>
+          </div>
+          <ul className="flex justify-center gap-10 py-2 text-3xl text-gray-600 md:gap-14 md:text-5xl">
+            <li className="transition-all duration-300 hover:text-teal-600">
+              <a href="#">
+                <AiFillFacebook />
+              </a>
+            </li>
+            <li className="transition-all duration-300 hover:text-teal-600">
+              <a href="#">
+                <AiFillInstagram />
+              </a>
+            </li>
+            <li className="transition-all duration-300 hover:text-teal-600">
+              <a href="#">
+                <AiFillLinkedin />
+              </a>
+            </li>
+            <li className="transition-all duration-300 hover:text-teal-600">
+              <a href="#">
+                <AiFillTwitterCircle />
+              </a>
+            </li>
+          </ul>
+          <div className="relative mx-auto mt-16 h-80 w-80 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:mt-20">
+            <Image
+              className="object-cover"
+              src={threeDimensionalImage}
+              alt="3D Person Waving Hand"
+              fill
+            />
+          </div>
         </section>
       </main>
     </>
