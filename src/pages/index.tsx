@@ -250,23 +250,29 @@ export default function Home() {
         <footer className="flex-row-reverse items-center justify-between pb-6 md:flex">
           <ul className="flex justify-center gap-14 py-3 text-3xl text-gray-600 dark:text-gray-400">
             <li>
-              <a href="#">
+              <a rel="noreferrer" target="_blank" href="#">
                 <AiFillGithub />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a rel="noreferrer" target="_blank" href="#">
                 <AiFillTwitterCircle />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a rel="noreferrer" target="_blank" href="#">
                 <AiFillLinkedin />
               </a>
             </li>
           </ul>
           <p className="py-2 text-center text-base dark:text-gray-300">
-            Copyright &copy; 2023 Shayan Ameen | All Rights Reserved.
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/shayan-ameen-developer/personal-portfolio/blob/main/LICENSE"
+            >
+              Copyright &copy; 2023 Shayan Ameen | All Rights Reserved.
+            </a>
           </p>
         </footer>
       </main>
