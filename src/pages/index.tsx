@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 
 import {
+  AiFillCheckCircle,
   AiFillGithub,
   AiFillLinkedin,
+  AiFillMinusCircle,
   AiFillTwitterCircle,
 } from "react-icons/ai";
 
@@ -49,7 +51,7 @@ export default function Home() {
               JavaScirpt Developer.
             </h3>
             <p className="text-md mx-auto max-w-xl py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl">
-              Freelancer providing services for web developmet and marketting
+              Freelancer providing services for web developmet and marketing
               needs. Join me down below and let&apos;s get cracking!
             </p>
             <div className="flex justify-center gap-16 py-3 text-5xl text-gray-600 dark:text-gray-400">
@@ -75,71 +77,110 @@ export default function Home() {
               developer, I&apos;ve done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to provide digital services
+              and collaborated with talented people to provide digital services
               for both businesses and consumers.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including web design, web
-              development and marketting.
+              development and marketing.
             </p>
           </div>
           <ul className="gap-10 lg:flex">
-            <li className="my-10 flex-1 rounded-xl p-10 text-center shadow-lg dark:bg-gray-700">
-              <Image className="mx-auto h-24 w-24" src={okay} alt="okay" />
-              <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
-                Silver Package
-              </h3>
+            <li className="my-10 flex-1 rounded-xl p-10 shadow-lg dark:bg-gray-700">
+              <div className="text-center">
+                <Image className="mx-auto h-24 w-24" src={okay} alt="okay" />
+                <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
+                  Silver Package
+                </h3>
+              </div>
               <h4 className="py-4 text-teal-500">What&apos;s Included</h4>
-              <p className="py-2 dark:text-gray-300">
-                Creating elegant designs suited for your needs & following core
-                design theory.
-              </p>
-              <p className="py-2 dark:text-gray-300">
-                Do you have an idea for your next great projectsite? Let&apos;s
-                make it a reality.
-              </p>
-              <p className="py-2 dark:text-gray-300">
-                Are you interested in marketting for your project? I can do
-                tricks to level it up.
-              </p>
+              <ul>
+                <li className="flex items-center gap-4">
+                  <AiFillCheckCircle className="text-6xl text-teal-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Creating elegant designs suited for your needs & following
+                    core design theory.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <AiFillMinusCircle className="text-6xl text-gray-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Do you have an idea for your next great project? Let&apos;s
+                    make it a reality.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <AiFillMinusCircle className="text-6xl text-gray-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Are you interested in marketing for your project? I can do
+                    tricks to level it up.
+                  </p>
+                </li>
+              </ul>
             </li>
-            <li className="my-10 flex-1 rounded-xl p-10 text-center shadow-lg dark:bg-gray-700">
-              <Image className="mx-auto h-24 w-24" src={good} alt="good" />
-              <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
-                Gold Project
-              </h3>
+            <li className="my-10 flex-1 rounded-xl p-10 shadow-lg dark:bg-gray-700">
+              <div className="text-center">
+                <Image className="mx-auto h-24 w-24" src={good} alt="good" />
+                <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
+                  Gold Package
+                </h3>
+              </div>
               <h4 className="py-4 text-teal-500">What&apos;s Included</h4>
-              <p className="py-2 dark:text-gray-300">
-                Creating elegant designs suited for your needs & following core
-                design theory.
-              </p>
-              <p className="py-2 dark:text-gray-300">
-                Do you have an idea for your next great projectsite? Let&apos;s
-                make it a reality.
-              </p>
-              <p className="py-2 dark:text-gray-300">
-                Are you interested in marketting for your project? I can do
-                tricks to level it up.
-              </p>
+              <ul>
+                <li className="flex items-center gap-4">
+                  <AiFillCheckCircle className="text-6xl text-teal-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Creating elegant designs suited for your needs & following
+                    core design theory.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <AiFillCheckCircle className="text-6xl text-teal-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Do you have an idea for your next great project? Let&apos;s
+                    make it a reality.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <AiFillMinusCircle className="text-6xl text-gray-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Are you interested in marketing for your project? I can do
+                    tricks to level it up.
+                  </p>
+                </li>
+              </ul>
             </li>
-            <li className="my-10 flex-1 rounded-xl p-10 text-center shadow-lg dark:bg-gray-700">
-              <Image className="mx-auto h-24 w-24" src={best} alt="best" />
-              <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
-                Platinum Package
-              </h3>
+            <li className="my-10 flex-1 rounded-xl p-10 shadow-lg dark:bg-gray-700">
+              <div className="text-center">
+                <Image className="mx-auto h-24 w-24" src={best} alt="best" />
+                <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
+                  Platinum Package
+                </h3>
+              </div>
               <h4 className="py-4 text-teal-500">What&apos;s Included</h4>
-              <p className="py-2 dark:text-gray-300">
-                Creating elegant designs suited for your needs & following core
-                design theory.
-              </p>
-              <p className="py-2 dark:text-gray-300">
-                Do you have an idea for your next great projectsite? Let&apos;s
-                make it a reality.
-              </p>
-              <p className="py-2 dark:text-gray-300">
-                Are you interested in marketting for your project? I can do
-                tricks to level it up.
-              </p>
+              <ul>
+                <li className="flex items-center gap-4">
+                  <AiFillCheckCircle className="text-6xl text-teal-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Creating elegant designs suited for your needs & following
+                    core design theory.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <AiFillCheckCircle className="text-6xl text-teal-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Do you have an idea for your next great project? Let&apos;s
+                    make it a reality.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <AiFillCheckCircle className="text-6xl text-teal-500" />
+                  <p className="py-2 dark:text-gray-300">
+                    Are you interested in marketing for your project? I can do
+                    tricks to level it up.
+                  </p>
+                </li>
+              </ul>
             </li>
           </ul>
         </section>
@@ -148,7 +189,7 @@ export default function Home() {
             <h3 className="py-1 text-3xl dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
-              developer, I&apos;ve done remote work for
+              dev7loper, I&apos;ve done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to provide digital services
@@ -156,7 +197,7 @@ export default function Home() {
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including web design, web
-              development and marketting.
+              development and marketing.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
