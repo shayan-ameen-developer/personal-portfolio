@@ -39,7 +39,7 @@ export default function Home() {
               <li>
                 <a href="#services">Services</a>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <a
                   className="rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
                   href="#"
