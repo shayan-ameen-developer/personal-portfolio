@@ -10,9 +10,9 @@ import {
 } from "react-icons/ai";
 
 import WavingHand3DEmoji from "../../public/waving-hand-3D-emoji.png";
-import good from "../../public/good.png";
-import best from "../../public/best.png";
-import okay from "../../public/okay.png";
+import package1 from "../../public/package1.png";
+import package2 from "../../public/package2.png";
+import package3 from "../../public/package3.png";
 import project1 from "../../public/project1.png";
 import project2 from "../../public/project2.png";
 import project3 from "../../public/project3.png";
@@ -73,22 +73,18 @@ export default function Home() {
           <div>
             <h3 className="py-1 text-3xl dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I&apos;ve done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talented people to provide digital services
-              for both businesses and consumers.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including web design, web
+              I offer from a wide range of services, including web design,
               development and marketing.
             </p>
           </div>
           <ul className="gap-10 lg:flex">
             <li className="my-10 flex-1 rounded-xl p-10 shadow-lg dark:bg-gray-700">
               <div className="text-center">
-                <Image className="mx-auto h-24 w-24" src={okay} alt="okay" />
+                <Image
+                  className="mx-auto h-24 w-24"
+                  src={package1}
+                  alt="package 1"
+                />
                 <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
                   Silver Package
                 </h3>
@@ -120,7 +116,11 @@ export default function Home() {
             </li>
             <li className="my-10 flex-1 rounded-xl p-10 shadow-lg dark:bg-gray-700">
               <div className="text-center">
-                <Image className="mx-auto h-24 w-24" src={good} alt="good" />
+                <Image
+                  className="mx-auto h-24 w-24"
+                  src={package2}
+                  alt="package 2"
+                />
                 <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
                   Gold Package
                 </h3>
@@ -152,7 +152,11 @@ export default function Home() {
             </li>
             <li className="my-10 flex-1 rounded-xl p-10 shadow-lg dark:bg-gray-700">
               <div className="text-center">
-                <Image className="mx-auto h-24 w-24" src={best} alt="best" />
+                <Image
+                  className="mx-auto h-24 w-24"
+                  src={package3}
+                  alt="package 3"
+                />
                 <h3 className="pt-8 pb-2 text-lg font-medium dark:text-white">
                   Platinum Package
                 </h3>
@@ -194,10 +198,6 @@ export default function Home() {
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to provide digital services
               for both businesses and consumers.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including web design, web
-              development and marketing.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
