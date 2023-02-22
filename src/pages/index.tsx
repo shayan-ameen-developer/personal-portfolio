@@ -30,31 +30,44 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="mb-12 flex justify-between py-10 dark:text-white">
+          <nav className="flex justify-between py-10 dark:text-white">
             <h1 className="font-burtons text-xl">shayan ameen</h1>
-            <ul className="flex items-center">
+            <ul className="flex items-center gap-8 dark:text-white">
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
               <li>
                 <a
-                  className="text- ml-8 rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
-                  href="#portfolio"
+                  className="rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white"
+                  href="#"
                 >
-                  Projects
+                  Hire Me
                 </a>
               </li>
             </ul>
           </nav>
-          <div className="p-10 py-10 text-center">
-            <h2 className="py-2 text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl">
-              Shayan Ameen
-            </h2>
-            <h3 className="py-2 text-2xl dark:text-white md:text-3xl">
-              JavaScirpt Developer.
-            </h3>
-            <p className="text-md mx-auto max-w-xl py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl">
-              Freelancer providing services for web developmet and marketing
-              needs. Join me down below and let&apos;s get cracking!
-            </p>
-
+          <div className="items-center gap-28 py-10 text-center lg:flex lg:text-left">
+            <div>
+              <h2 className="py-2 text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl">
+                Shayan Ameen
+              </h2>
+              <h3 className="py-2 text-2xl dark:text-white md:text-3xl">
+                JavaScirpt Developer.
+              </h3>
+              <p className="text-md mx-auto max-w-xl py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl lg:mx-0">
+                Freelancer providing services for web developmet and marketing
+                needs. Join me down below and let&apos;s get cracking!
+              </p>
+              <a
+                className="mt-6 mb-8 inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-teal-500 px-8 py-3 text-2xl text-white"
+                href="#"
+              >
+                Hire Me
+              </a>
+            </div>
             <div className="relative mx-auto mt-20 h-56 w-56 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
               <Image
                 className="object-cover"
@@ -65,7 +78,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="services">
           <div>
             <h3 className="py-1 text-3xl dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -86,25 +99,30 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <h4 className="py-4 text-teal-500">What&apos;s Included</h4>
+                <h4 className="py-4 dark:text-gray-300">
+                  What&apos;s Included for{" "}
+                  <span className="text-lg font-semibold text-teal-500">
+                    $10
+                  </span>
+                </h4>
                 <ul>
                   <li className="flex items-center gap-4">
-                    <AiFillMinusCircle className="text-6xl text-gray-500" />
-                    <p className="py-2 dark:text-gray-300">
-                      Creating elegant designs suited for your needs & following
-                      core design theory.
-                    </p>
-                  </li>
-                  <li className="flex items-center gap-4">
                     <AiFillCheckCircle className="text-6xl text-teal-500" />
-                    <p className="py-2 dark:text-gray-300">
+                    <p className="py-2 text-sm dark:text-gray-300">
                       Do you have an idea for your next great project?
                       Let&apos;s make it a reality.
                     </p>
                   </li>
                   <li className="flex items-center gap-4">
                     <AiFillMinusCircle className="text-6xl text-gray-500" />
-                    <p className="py-2 dark:text-gray-300">
+                    <p className="py-2 text-sm dark:text-gray-300">
+                      Creating elegant designs suited for your needs & following
+                      core design theory.
+                    </p>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <AiFillMinusCircle className="text-6xl text-gray-500" />
+                    <p className="py-2 text-sm dark:text-gray-300">
                       Are you interested in marketing for your project? I can do
                       tricks to level it up.
                     </p>
@@ -124,25 +142,30 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <h4 className="py-4 text-teal-500">What&apos;s Included</h4>
+                <h4 className="py-4 dark:text-gray-300">
+                  What&apos;s Included for{" "}
+                  <span className="text-lg font-semibold text-teal-500">
+                    $20
+                  </span>
+                </h4>
                 <ul>
                   <li className="flex items-center gap-4">
                     <AiFillCheckCircle className="text-6xl text-teal-500" />
-                    <p className="py-2 dark:text-gray-300">
-                      Creating elegant designs suited for your needs & following
-                      core design theory.
-                    </p>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <AiFillCheckCircle className="text-6xl text-teal-500" />
-                    <p className="py-2 dark:text-gray-300">
+                    <p className="py-2 text-sm dark:text-gray-300">
                       Do you have an idea for your next great project?
                       Let&apos;s make it a reality.
                     </p>
                   </li>
                   <li className="flex items-center gap-4">
+                    <AiFillCheckCircle className="text-6xl text-teal-500" />
+                    <p className="py-2 text-sm dark:text-gray-300">
+                      Creating elegant designs suited for your needs & following
+                      core design theory.
+                    </p>
+                  </li>
+                  <li className="flex items-center gap-4">
                     <AiFillMinusCircle className="text-6xl text-gray-500" />
-                    <p className="py-2 dark:text-gray-300">
+                    <p className="py-2 text-sm dark:text-gray-300">
                       Are you interested in marketing for your project? I can do
                       tricks to level it up.
                     </p>
@@ -162,25 +185,30 @@ export default function Home() {
                 </h3>
               </div>
               <div>
-                <h4 className="py-4 text-teal-500">What&apos;s Included</h4>
+                <h4 className="py-4 dark:text-gray-300">
+                  What&apos;s Included for{" "}
+                  <span className="text-lg font-semibold text-teal-500">
+                    $30
+                  </span>
+                </h4>
                 <ul>
                   <li className="flex items-center gap-4">
                     <AiFillCheckCircle className="text-6xl text-teal-500" />
-                    <p className="py-2 dark:text-gray-300">
-                      Creating elegant designs suited for your needs & following
-                      core design theory.
-                    </p>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <AiFillCheckCircle className="text-6xl text-teal-500" />
-                    <p className="py-2 dark:text-gray-300">
+                    <p className="py-2 text-sm dark:text-gray-300">
                       Do you have an idea for your next great project?
                       Let&apos;s make it a reality.
                     </p>
                   </li>
                   <li className="flex items-center gap-4">
                     <AiFillCheckCircle className="text-6xl text-teal-500" />
-                    <p className="py-2 dark:text-gray-300">
+                    <p className="py-2 text-sm dark:text-gray-300">
+                      Creating elegant designs suited for your needs & following
+                      core design theory.
+                    </p>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <AiFillCheckCircle className="text-6xl text-teal-500" />
+                    <p className="py-2 text-sm dark:text-gray-300">
                       Are you interested in marketing for your project? I can do
                       tricks to level it up.
                     </p>
